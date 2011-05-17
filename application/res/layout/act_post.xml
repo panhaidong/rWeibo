@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ffffff" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<include android:id="@id/vg_navBar" layout="@layout/view_navbar_compose" />
+	<LinearLayout android:id="@id/vg_actionBar" android:layout_alignParentBottom="true" style="@style/Toolbar">
+		<ImageButton android:layout_gravity="center_vertical" android:id="@id/ibtn_mention" android:background="@null"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_mention"
+			android:layout_weight="0.2" android:onClick="onClickHandler" />
+		<ImageButton android:layout_gravity="center_vertical" android:id="@id/ibtn_camera" android:background="@null"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_camera"
+			android:layout_weight="0.2" android:onClick="onClickHandler" />
+		<ImageButton android:layout_gravity="center_vertical" android:id="@id/ibtn_gallery" android:background="@null"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_media"
+			android:layout_weight="0.2" android:onClick="onClickHandler" />
+		<ImageButton android:layout_gravity="center_vertical" android:id="@id/ibtn_location" android:background="@null"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_geo_off"
+			android:layout_weight="0.2" android:onClick="onClickHandler" />
+	</LinearLayout>
+
+
+	<ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_below="@id/vg_navBar">
+
+		<LinearLayout android:id="@android:id/list" android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<!-- <RelativeLayout android:id="@+id/reply_tweet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+				<com.twitter.android.widget.TweetView android:id="@+id/reply_tweet_content" style="@style/ListRow" /> <View android:background="@drawable/list_rule" 
+				android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/reply_tweet_content" android:layout_alignParentLeft="true" 
+				/> </RelativeLayout> -->
+			<MultiAutoCompleteTextView android:id="@id/mactv_noteText" android:textColor="@android:color/black"
+				android:gravity="top|left|center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip"
+				android:hint="What's happening?" android:maxLines="5" android:minLines="4" android:completionThreshold="1"
+				android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage" android:imeOptions="flagNoEnterAction">
+				<requestFocus />
+			</MultiAutoCompleteTextView>
+			<Button android:layout_gravity="top|center" android:id="@id/btn_drafts" android:visibility="gone"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip"
+				android:text="@string/drafts" android:onClick="onClickHandler" style="@style/Button" />
+
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

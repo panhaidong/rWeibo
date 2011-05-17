@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TabWidget android:id="@android:id/tabs" android:background="@drawable/tab_bar_background"
+			android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:divider="@null" />
+		<FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<ProgressBar android:id="@android:id/progress" android:layout_gravity="top|center" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:indeterminate="true"
+				style="?android:progressBarStyleSmall" android:visibility="gone" />
+			<ListView android:id="@android:id/list" android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:cacheColorHint="@android:color/transparent" />
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>

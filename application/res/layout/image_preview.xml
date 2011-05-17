@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="6.0dip" android:visibility="gone"
+	android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:id="@+id/preview_image_1" android:layout_marginBottom="6.0dip"
+		android:layout_centerHorizontal="true" android:onClick="onClickHandler" style="@style/PreviewImage" />
+	<ImageView android:id="@+id/preview_image_2" android:layout_marginBottom="6.0dip" android:layout_below="@id/preview_image_1"
+		android:layout_centerHorizontal="true" android:onClick="onClickHandler" style="@style/PreviewImage" />
+	<ImageView android:id="@+id/preview_image_3" android:layout_below="@id/preview_image_2"
+		android:layout_centerHorizontal="true" android:onClick="onClickHandler" style="@style/PreviewImage" />
+</RelativeLayout>

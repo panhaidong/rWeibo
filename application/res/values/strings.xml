@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello rWeibo!</string>
-    <string name="app_name">rWeibo</string>
+	<string name="hello">Hello World, Splash!</string>
+	<string name="app_name">rWeibo</string>
+
+	<string name="dot">•</string>
+	<string name="post_max_chars">140</string>
+	<string name="in_reply_to">In reply to…</string>
+	<string name="drafts">Drafts</string>
+
 </resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/row" style="@style/ListRow">
+	<ImageView android:id="@id/iv_userImage" android:layout_width="50dip" android:layout_height="50dip"
+		android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" />
+	<ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginTop="3.0dip" android:src="@drawable/ic_locked" android:layout_below="@id/iv_userImage"
+		android:layout_alignRight="@id/iv_userImage" />
+
+	<TextView android:id="@id/tv_userName" android:textStyle="bold" android:textColor="@color/text_color"
+		android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:singleLine="true" android:layout_toRightOf="@id/iv_userImage" />
+
+	<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignTop="@id/tv_userName" android:layout_alignBottom="@id/tv_userName"
+		android:layout_alignParentRight="true">
+		<ImageView android:id="@id/iv_noteReplyIcon" android:visibility="gone" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_mini_reply" />
+		<ImageView android:id="@id/iv_noteMediaIcon" android:visibility="gone" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_mini_media" />
+		<ImageView android:id="@id/iv_noteGeoIcon" android:visibility="gone" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_location_pin_list" />
+		<TextView android:id="@id/tv_noteCreateAt" android:textSize="12.0sp" android:textColor="@color/gray_color"
+			android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<TextView android:id="@id/tv_noteText" android:textSize="14.0sp" android:textColor="@color/text_color"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_userImage"
+		android:layout_below="@id/tv_userName" android:lineSpacingMultiplier="1.2" />
+
+	<ImageView android:id="@id/iv_noteImage" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/iv_userImage" android:layout_below="@id/tv_noteText" android:layout_centerHorizontal="true"
+		android:visibility="gone"></ImageView>
+
+	<LinearLayout android:id="@id/vg_noteForward" android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_marginLeft="10dip" android:visibility="gone" android:layout_toRightOf="@id/iv_userImage"
+		android:layout_below="@id/tv_noteText">
+
+		<View android:layout_width="1dip" android:layout_height="fill_parent" android:background="#FF000000" />
+
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical" android:padding="4dip">
+			<TextView android:id="@id/tv_noteForwardText" android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="14dip" android:textColor="#333333" android:lineSpacingMultiplier="1.2" android:text="asdfsad" />
+			<ImageView android:id="@id/iv_noteForwardImage" android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" android:visibility="gone"></ImageView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		android:padding="5dip"> <ImageView android:id="@+id/iv_icon" android:layout_width="48sp" android:layout_height="48sp" android:background="@drawable/border_4px" 
+		android:layout_margin="2dip"></ImageView> <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:paddingLeft="4dip"> <TextView android:id="@+id/tv_nickname" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:textSize="16dip" android:textColor="@color/text_color" android:textStyle="bold" 
+		style="@style/InsetText" /> <TextView android:id="@+id/tv_note_text" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:textSize="14dip" android:textColor="#424242" android:lineSpacingMultiplier="1.2" style="@style/InsetText" /> </LinearLayout> 
+		</LinearLayout> -->
+</RelativeLayout>

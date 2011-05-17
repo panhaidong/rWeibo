@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="ListRow">
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:background">@drawable/list_row_background</item>
+		<item name="android:paddingLeft">6.0dip</item>
+		<item name="android:paddingTop">4.0dip</item>
+		<item name="android:paddingRight">6.0dip</item>
+
+		<item name="android:paddingBottom">4.0dip</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">?android:listPreferredItemHeight</item>
+	</style>
+	<style name="ListRow.Tweet" parent="@style/ListRow">
+		<item name="android:background">@drawable/list_row_background</item>
+
+		<item name="android:paddingLeft">3.0dip</item>
+	</style>
+	<style name="InsetText">
+		<item name="android:shadowColor">@android:color/white</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">0.5</item>
+	</style>
+
+	<style name="Button" parent="@style/InsetText">
+		<item name="android:textSize">17.0sp</item>
+		<item name="android:textStyle">bold</item>
+		<!-- <item name="android:textColor">@color/button_text</item> -->
+		<item name="android:background">@drawable/button_bg</item>
+		<item name="android:paddingLeft">8.0dip</item>
+
+		<item name="android:paddingRight">8.0dip</item>
+	</style>
+	<style name="Dot">
+		<item name="android:textSize">18.0sp</item>
+		<item name="android:textColor">@color/dot</item>
+		<item name="android:text">@string/dot</item>
+	</style>
+
+	<style name="List">
+		<item name="android:fadingEdge">none</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:listSelector">@color/clear</item>
+		<item name="android:drawSelectorOnTop">false</item>
+
+		<item name="android:cacheColorHint">#ffffffff</item>
+		<item name="android:divider">@drawable/list_rule</item>
+		<item name="android:dividerHeight">1.0px</item>
+	</style>
+
+	<style name="Button.Action" parent="@style/Button">
+		<item name="android:background">@null</item>
+		<item name="android:layout_marginLeft">5.0dip</item>
+		<item name="android:layout_marginRight">5.0dip</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">0.25</item>
+	</style>
+	<style name="IconButton">
+		<item name="android:background">@drawable/button_bg</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="TweetContent" parent="@android:style/TextAppearance.Medium">
+		<item name="android:typeface">serif</item>
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:textColorLink">@color/link_color</item>
+		<item name="android:lineSpacingMultiplier">1.2</item>
+	</style>
+	<style name="Byline" parent="@android:style/TextAppearance.Small">
+
+		<item name="android:textColor">@color/gray_color</item>
+		<item name="android:textColorLink">@color/link_color</item>
+		<item name="android:paddingTop">2.0dip</item>
+	</style>
+	<style name="titleText">
+		<item name="android:textSize">18.0sp</item>
+		<item name="android:textColor">@color/title_text_color</item>
+
+		<item name="android:ellipsize">end</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	<style name="Navbar">
+		<item name="android:background">@drawable/top_toolbar_bg</item>
+		<item name="android:padding">0.0dip</item>
+		<item name="android:layout_width">fill_parent</item>
+
+		<item name="android:layout_height">@dimen/titlebar_height</item>
+	</style>
+	<style name="NavbarTitle">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">6.0dip</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<style name="NavbarTitle.Text" parent="@style/NavbarTitle">
+		<item name="android:textSize">17.0sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_alignParentLeft">true</item>
+	</style>
+	<style name="NavbarSep">
+		<item name="android:background">@drawable/nav_line_separator</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_alignParentTop">true</item>
+		<item name="android:layout_alignParentBottom">true</item>
+	</style>
+	<style name="NavbarProgress" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginRight">6.0dip</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+	<style name="NavbarBtn">
+		<item name="android:background">@color/clear</item>
+		<item name="android:layout_width">50.0dip</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_alignParentTop">true</item>
+		<item name="android:layout_alignParentBottom">true</item>
+
+		<item name="android:layout_alignWithParentIfMissing">true</item>
+	</style>
+	<style name="NavbarTextBtn">
+		<item name="android:textSize">15.0sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/nav_btn_text</item>
+		<item name="android:background">@drawable/nav_button_bg</item>
+
+		<item name="android:paddingLeft">10.0dip</item>
+		<item name="android:paddingRight">10.0dip</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">30.0dip</item>
+		<item name="android:layout_marginLeft">6.0dip</item>
+		<item name="android:layout_marginRight">6.0dip</item>
+
+		<item name="android:shadowColor">@android:color/black</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">0.5</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+	<style name="PreviewImage">
+		<item name="android:layout_width">wrap_content</item>
+
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:scaleType">centerInside</item>
+		<item name="android:adjustViewBounds">true</item>
+	</style>
+	<style name="Pill" parent="@style/InsetText">
+		<item name="android:textSize">10.0sp</item>
+		<item name="android:gravity">center</item>
+
+		<item name="android:paddingLeft">@dimen/pill_side_padding</item>
+		<item name="android:paddingRight">@dimen/pill_side_padding</item>
+		<item name="android:visibility">gone</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">3.0dip</item>
+
+	</style>
+	<style name="Profile">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:singleLine">true</item>
+
+	</style>
+	<style name="Profile.Edit" parent="@style/Profile">
+		<item name="android:layout_marginLeft">10.0dip</item>
+		<item name="android:layout_marginRight">10.0dip</item>
+	</style>
+	<style name="Profile.Title" parent="@style/Profile">
+		<item name="android:textSize">21.0sp</item>
+
+	</style>
+	<style name="Profile.Title.Edit" parent="@style/Profile.Title">
+		<item name="android:layout_marginLeft">10.0dip</item>
+	</style>
+	<style name="ButtonBar">
+		<item name="android:background">@drawable/btn_bar_bg</item>
+		<item name="android:padding">8.0dip</item>
+
+		<item name="android:layout_marginLeft">6.0dip</item>
+		<item name="android:layout_marginTop">12.0dip</item>
+		<item name="android:layout_marginRight">6.0dip</item>
+		<item name="android:layout_marginBottom">12.0dip</item>
+	</style>
+	<style name="Toolbar">
+		<item name="android:background">@drawable/tool_bar_background</item>
+
+		<item name="android:padding">6.0dip</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">46.0dip</item>
+	</style>
+	<style name="SignupLabel">
+		<item name="android:textColor">@color/text_color</item>
+		<item name="android:layout_width">wrap_content</item>
+
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">3.0dip</item>
+	</style>
+	<style name="SignupLabel.Err" parent="@style/SignupLabel">
+		<item name="android:textAppearance">?android:textAppearanceSmall</item>
+		<item name="android:textColor">#ffff0000</item>
+		<item name="android:visibility">gone</item>
+
+	</style>
+	<style name="SignupEdit">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+</resources>

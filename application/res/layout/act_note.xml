@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ffffff" xmlns:android="http://schemas.android.com/apk/res/android">
+	<include android:id="@id/vg_navBar" layout="@layout/view_navbar" />
+	<LinearLayout android:id="@id/vg_actionBar" android:layout_alignParentBottom="true" style="@style/Toolbar">
+		<ImageButton android:id="@id/ibtn_reply" android:src="@drawable/swipe_reply" android:onClick="onClickHandler"
+			style="@style/Button.Action" />
+		<ImageButton android:id="@id/ibtn_retweet" android:src="@drawable/swipe_retweet" android:onClick="onClickHandler"
+			style="@style/Button.Action" />
+		<ImageButton android:id="@id/ibtn_delete" android:visibility="gone" android:src="@drawable/swipe_delete"
+			android:layout_weight="0.25" android:onClick="onClickHandler" style="@style/Button.Action" />
+		<ImageButton android:id="@id/ibtn_favorite" android:src="@drawable/swipe_fav_off" android:onClick="onClickHandler"
+			style="@style/Button.Action" />
+		<ImageButton android:id="@id/ibtn_share" android:src="@drawable/swipe_share" android:onClick="onClickHandler"
+			style="@style/Button.Action" />
+	</LinearLayout>
+	<FrameLayout android:id="@id/vg_mainBody" android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/vg_navBar" android:layout_above="@id/vg_actionBar">
+		<RelativeLayout android:id="@id/vg_userBadge" android:background="@drawable/badge_bg"
+			android:paddingLeft="7.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:focusable="true"
+			android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/badge_height"
+			android:onClick="onClickHandler">
+			<ImageView android:id="@id/iv_userImage" android:layout_width="50dip" android:layout_height="50dip"
+				android:src="@drawable/ic_no_profile_photo" />
+			<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+				android:layout_toRightOf="@id/iv_userImage" android:layout_alignTop="@id/iv_userImage" android:layout_alignBottom="@id/iv_userImage">
+				<TextView android:id="@id/tv_userScreenName" android:textSize="16.0sp" android:textStyle="bold"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/InsetText"
+					android:textColor="@color/text_color" />
+				<TextView android:id="@id/tv_userDomain" android:textSize="14.0sp" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" style="@style/InsetText" android:textColor="@color/text_color" />
+			</LinearLayout>
+
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron"
+				android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+		</RelativeLayout>
+		<ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<View android:id="@id/spacer" android:background="@drawable/tweet_details_divider" android:clickable="true"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/badge_height" />
+
+				<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="10.0dip"
+					android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/spacer">
+					<TextView android:id="@id/tv_noteText" android:layout_width="fill_parent" android:layout_height="wrap_content"
+						style="@style/TweetContent" />
+					<ImageView android:id="@id/iv_noteImage" android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal" android:visibility="gone"></ImageView>
+
+					<LinearLayout android:id="@id/vg_noteForward" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginLeft="10dip"
+						android:visibility="gone" android:layout_toRightOf="@id/iv_userImage" android:layout_below="@id/tv_noteText">
+
+						<View android:layout_width="1dip" android:layout_height="match_parent" android:background="#FF000000" />
+
+						<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:orientation="vertical" android:padding="4dip">
+							<TextView android:id="@id/tv_noteForwardText" android:layout_width="fill_parent" android:layout_height="wrap_content"
+								android:textSize="14dip" android:textColor="#333333" android:lineSpacingMultiplier="1.2" />
+
+							<ImageView android:id="@id/iv_noteForwardImage" android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:visibility="gone"></ImageView>
+						</LinearLayout>
+					</LinearLayout>
+
+					<TextView android:id="@id/tv_noteSource" android:layout_width="wrap_content" android:layout_height="wrap_content"
+						style="@style/Byline" />
+
+				</LinearLayout>
+			</RelativeLayout>
+		</ScrollView>
+	</FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+	android:layout_height="44dip" android:background="@drawable/nav_background">
+	<ImageView android:id="@id/iv_navImage" android:src="@drawable/weibo_logo_48x48" style="@style/NavbarTitle"
+		android:visibility="gone"></ImageView>
+	<TextView android:id="@id/tv_navTitle" style="@style/NavbarTitle.Text" android:layout_toRightOf="@id/iv_navImage"
+		android:visibility="gone" />
+	<ImageButton android:id="@id/ibtn_compose" android:src="@drawable/ic_nav_compose_default" style="@style/NavbarBtn"
+		android:layout_alignParentRight="true" android:background="#00000000" android:onClick="onClickHandler" />
+	<ImageView android:id="@id/iv_navTitleSep3" style="@style/NavbarSep" android:layout_toLeftOf="@id/ibtn_compose" />
+	<ImageButton android:id="@id/ibtn_search" android:src="@drawable/ic_nav_search" style="@style/NavbarBtn"
+		android:background="#00000000" android:layout_toLeftOf="@id/iv_navTitleSep3" android:onClick="onClickHandler" />
+	<ImageView android:id="@id/iv_navTitleSep2" style="@style/NavbarSep" android:layout_toLeftOf="@id/ibtn_search" />
+</RelativeLayout>

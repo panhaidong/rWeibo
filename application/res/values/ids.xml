@@ -1,0 +1,50 @@
+<resources>
+	<item type="id" name="spacer" />
+
+	<item type="id" name="btn_login" />
+	<item type="id" name="btn_submit" />
+	<item type="id" name="btn_drafts" />
+	<item type="id" name="ibtn_reply" />
+	<item type="id" name="ibtn_retweet" />
+	<item type="id" name="ibtn_delete" />
+	<item type="id" name="ibtn_favorite" />
+	<item type="id" name="ibtn_share" />
+	<item type="id" name="ibtn_mention" />
+	<item type="id" name="ibtn_camera" />
+	<item type="id" name="ibtn_gallery" />
+	<item type="id" name="ibtn_location" />
+	<item type="id" name="iv_weiboLogo" />
+	<item type="id" name="web_login" />
+
+	<item type="id" name="iv_navImage" />
+	<item type="id" name="tv_navTitle" />
+	<item type="id" name="ibtn_compose" />
+	<item type="id" name="ibtn_search" />
+
+	<item type="id" name="iv_navTitleSep1" />
+	<item type="id" name="iv_navTitleSep2" />
+	<item type="id" name="iv_navTitleSep3" />
+
+	<item type="id" name="iv_userImage" />
+	<item type="id" name="tv_userName" />
+	<item type="id" name="tv_userDomain" />
+	<item type="id" name="tv_userScreenName" />
+
+	<item type="id" name="iv_noteImage" />
+	<item type="id" name="tv_noteSource" />
+	<item type="id" name="tv_noteCreateAt" />
+	<item type="id" name="tv_noteText" />
+	<item type="id" name="iv_noteMediaIcon" />
+	<item type="id" name="iv_noteReplyIcon" />
+	<item type="id" name="iv_noteGeoIcon" />
+	<item type="id" name="iv_noteForwardImage" />
+	<item type="id" name="tv_noteForwardText" />
+	<item type="id" name="mactv_noteText" />
+	<item type="id" name="tv_wordCount" />
+
+	<item type="id" name="vg_noteForward" />
+	<item type="id" name="vg_navBar" />
+	<item type="id" name="vg_actionBar" />
+	<item type="id" name="vg_mainBody" />
+	<item type="id" name="vg_userBadge" />
+</resources>
